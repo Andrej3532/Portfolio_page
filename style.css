@@ -80,6 +80,7 @@ li a{
 h2{
   font-size: 4.2rem;
   text-align: center;
+  padding-top: 90px;
 }
 .container{
   width: 67%;
@@ -120,6 +121,7 @@ h2{
   width: 8%;
   margin: 0 auto;
   margin-top: 20px;
+  padding-bottom: 50px;
 }
 .show a{
  color:var(--main-white);
@@ -144,4 +146,53 @@ h2{
 }
 .show:hover a::after{
   transform: translateX(2px);
+}
+#contact{
+  background-color: var(--main-gray);
+  height: 81vh;
+}
+.contact_style p{
+  font-size: 2rem;
+    font-weight: lighter;
+    font-style: italic;
+   text-align: center;
+}
+.align{
+padding-top: 30vh;
+   
+}
+.contact_li_style{
+  justify-content: center;
+}
+.contact_a_style{
+font-size: 2.5rem;
+transition: transform 0.3s ease-out;
+}
+.contact_a_style:hover{
+  transform: translateY(5px);
+}
+.red_strip{
+  min-width: 100%;
+  min-height: 0.4vh;
+  background-color: var(--main-red);
+}
+hr{display: none;}
+footer{
+  display: flex;
+  height: 11vh;
+  background-color: var(--main-gray)
+
+}
+.footer_1{
+  width: 70%;
+  text-align: center;
+  line-height: 11vh;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+.footer_2{
+  width: 30%;
+  line-height: 11vh;
+  font-size: 2rem;
+  font-weight: lighter;
 }
