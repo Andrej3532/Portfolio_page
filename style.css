@@ -149,7 +149,11 @@ h2{
 }
 #contact{
   background-color: var(--main-gray);
-  height: 81vh;
+  height: 81vh; 
+display: flex;
+    align-items: center;
+    justify-content: center; 
+    
 }
 .contact_style p{
   font-size: 2rem;
@@ -157,10 +161,7 @@ h2{
     font-style: italic;
    text-align: center;
 }
-.align{
-padding-top: 30vh;
-   
-}
+
 .contact_li_style{
   justify-content: center;
 }
