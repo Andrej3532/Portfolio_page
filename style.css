@@ -66,8 +66,11 @@ li a{
   font-size: 6rem;
 }
 #work{
-  background-color: var(--main-blue);
   
+}
+.bc{
+  min-height: 135vh;
+  background-color: var(--main-blue);
 }
 .my_proj{
   max-width: 640px;
@@ -80,18 +83,14 @@ h2{
 }
 .container{
   width: 67%;
-  min-height: 50%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 3%;
+ grid-template-columns: repeat(3, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 13% 3%;
   text-align: center;
 }
 .item{
- /* background-image: url(Image/tribute.jpg);
-  background-size: contain;
-  background-repeat: no-repeat;*/
   height: 42vh;
   width: 42vh;
 }
@@ -103,7 +102,6 @@ h2{
 .a_tribute{
   color: var(--main-white);
   text-decoration: none;
-
 }
 .project-title{
     background-color: var(--main-gray);
@@ -114,8 +112,36 @@ h2{
 .code{
  color: var(--main-gray);
   transition: color 0.3s ease-out;
-
 }
 .item:hover .code {
  color: #ff7f50;
+}
+.show{
+  width: 8%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+.show a{
+ color:var(--main-white);
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px;
+  background-color: var(--main-gray);
+  
+  margin: 0 auto;
+  font-size: 2rem;
+  align-items: center;
+  transition: background-color 0.3s ease-out;
+}
+.show a::after{
+  content: ">";
+  font-size: 3rem;
+  transition: transform 0.3s ease-out;
+}
+.show:hover a{
+  background-color:var(--main-red);
+}
+.show:hover a::after{
+  transform: translateX(2px);
 }
